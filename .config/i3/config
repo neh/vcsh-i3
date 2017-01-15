@@ -69,6 +69,7 @@ bindsym Mod4+z split h
 bindsym Mod4+v split v
 
 # enter fullscreen mode for the focused container
+# bindsym Mod4+f exec --no-startup-id xdotool key F11
 bindsym Mod4+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
