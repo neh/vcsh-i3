@@ -254,6 +254,7 @@ bar {
         output DP1
         output DP-1
         output DP2-1
+        output DP-2-1
         output VGA-0
 
         separator_symbol " | "
@@ -275,6 +276,7 @@ bar {
         modifier Mod1
 
         output DP2-2
+        output DP-2-2
 
         separator_symbol " | "
 
