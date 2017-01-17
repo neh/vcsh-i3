@@ -38,6 +38,7 @@ set $right s
 floating_modifier Mod4
 
 # start a terminal
+bindsym Mod4+c exec $terminal -e ~/bin/tmux-main-attach
 bindsym Mod4+c exec $terminal
 
 # kill focused window
