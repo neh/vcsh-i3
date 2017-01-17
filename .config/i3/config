@@ -160,7 +160,7 @@ mode "system" {
         # Lock
         bindsym l exec --no-startup-id xautolock -locknow, mode "default"
         # Suspend
-        bindsym s exec --no-startup-id xautolock -locknow && sudo pm-suspend, mode "default"
+        bindsym s exec --no-startup-id xautolock -locknow && systemctl suspend, mode "default"
 
         # Detach external displays
         bindsym g exec --no-startup-id autorandr --load mobile, mode "default"
