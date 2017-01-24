@@ -124,6 +124,8 @@ bindsym Mod4+0 workspace number 10
 bindsym Mod4+Tab workspace back_and_forth
 bindsym Mod4+Control+$left workspace prev
 bindsym Mod4+Control+$right workspace next
+bindsym Mod4+Control+Shift+$left move workspace to output left
+bindsym Mod4+Control+Shift+$right move workspace to output right
 
 # move focused container to workspace
 bindsym Mod4+Shift+1 move container to workspace number 1
