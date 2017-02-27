@@ -1,5 +1,5 @@
 interval=5
-color=#aaaaaa
+color=#d5c4a1
 command=$HOME/.config/i3blocks/blocks/$BLOCK_NAME
 
 [window_title]

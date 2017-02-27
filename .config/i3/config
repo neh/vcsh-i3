@@ -247,12 +247,13 @@ bar {
         separator_symbol " | "
 
         colors {
-                background #222222
-                statusline #dddddd
-                focused_workspace #dd4814 #dd4814 #dfd8c3
-                active_workspace #dfd8c3 #dfd8c3 #222222
-                inactive_workspace #222222 #222222 #666666
-                urgent_workspace #d7c529 #d7c529 #222222
+                background #282828
+                statusline #fbf1c7
+                focused_workspace #fe8019 #fe8019 #282828
+                active_workspace #458588 #458588 #282828
+                inactive_workspace #282828 #282828 #a89984
+                urgent_workspace #fabd2f #fabd2f #282828
+                binding_mode #b8bb26 #b8bb26 #282828
         }
 }
 
@@ -272,12 +273,13 @@ bar {
         separator_symbol " | "
 
         colors {
-                background #222222
-                statusline #dddddd
-                focused_workspace #dd4814 #dd4814 #dfd8c3
-                active_workspace #dfd8c3 #dfd8c3 #222222
-                inactive_workspace #222222 #222222 #666666
-                urgent_workspace #d7c529 #d7c529 #222222
+                background #282828
+                statusline #fbf1c7
+                focused_workspace #fe8019 #fe8019 #282828
+                active_workspace #458588 #458588 #282828
+                inactive_workspace #282828 #282828 #d5c4a1
+                urgent_workspace #fabd2f #fabd2f #282828
+                binding_mode #b8bb26 #b8bb26 #282828
         }
 }
 
@@ -293,19 +295,20 @@ bar {
         separator_symbol " | "
 
         colors {
-                background #222222
-                statusline #dddddd
-                focused_workspace #dd4814 #dd4814 #eeeeee
-                active_workspace #dfd8c3 #dfd8c3 #222222
-                inactive_workspace #222222 #222222 #666666
-                urgent_workspace #d7c529 #d7c529 #222222
+                background #282828
+                statusline #fbf1c7
+                focused_workspace #fe8019 #fe8019 #282828
+                active_workspace #458588 #458588 #282828
+                inactive_workspace #282828 #282828 #d5c4a1
+                urgent_workspace #fabd2f #fabd2f #282828
+                binding_mode #b8bb26 #b8bb26 #282828
         }
 }
 
 force_display_urgency_hint 1500 ms
 
 exec --no-startup-id compton
-exec --no-startup-id hsetroot #db7f0f
+exec --no-startup-id hsetroot -solid '#fe8019'
 exec --no-startup-id sleep 0.5 && xcape
 exec --no-startup-id xautolock -time 15 -locker "i3lock --dpms -c 000000 -e"
 exec --no-startup-id xset dpms 0 0 600
@@ -323,7 +326,7 @@ exec $terminal
 new_window none
 new_float none
 
-client.focused #dd4814 #dd4814 #eeeeee #fffad5
-client.focused_inactive #dfd8c3 #dfd8c3 #222222 #fffad5
-client.unfocused #333333 #333333 #999999 #fffad5
-client.urgent #d7c529 #d7c529 #222222 #fffad5
+client.focused #fe8019 #fe8019 #282828
+client.focused_inactive #458588 #458588 #282828
+client.unfocused #32302f #32302f #bdae93
+client.urgent #fabd2f #fabd2f #282828

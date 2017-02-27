@@ -37,11 +37,11 @@ class Battery:
 
     def show(self, plug_changed=False):
         if self.percentage <= 10 and self.state != 'Charging':
-            colour = '#ff0000'
+            colour = '#fb4934'
         elif self.percentage <= 25 and self.state != 'Charging':
-            colour = '#ffde00'
+            colour = '#fabd2f'
         else:
-            colour = '#00aa00'
+            colour = '#bdbb26'
 
         if self.state == 'Charging':
             out = "<span foreground=\"%s\"></span> %i%%" % (colour, self.percentage)

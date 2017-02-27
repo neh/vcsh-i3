@@ -9,8 +9,8 @@ STATE=$(cat /sys/class/net/$INTERFACE/operstate)
 
 if [[ "$STATE" = "down" || "$INTERFACE" = "" ]]; then
 
-  echo "<span foreground=\"#FF0000\">  </span>"
-  echo "<span foreground=\"#FF0000\">  </span>"
+  echo "<span foreground=\"#fb4934\">  </span>"
+  echo "<span foreground=\"#fb4934\">  </span>"
 
 elif [[ -e /sys/class/net/$INTERFACE/wireless ]]; then
 
@@ -31,9 +31,9 @@ elif [[ -e /sys/class/net/$INTERFACE/wireless ]]; then
   QUALITY="$(nmcli -t -f ssid,signal device wifi list | grep "^$ESSID:" | cut -d':' -f 2)"
 
   if [[ $QUALITY -le 50 ]]; then
-    SYMBOL="<span foreground=\"#FFDE00\"> </span>"
+    SYMBOL="<span foreground=\"#fabd2f\"> </span>"
   else
-    SYMBOL=" "
+    SYMBOL="<span foreground=\"#b8bb26\"> </span>"
   fi
 
   echo "$SYMBOL $ESSID  $IP"
@@ -42,6 +42,6 @@ elif [[ -e /sys/class/net/$INTERFACE/wireless ]]; then
 else
 
   IP=$(/sbin/ifconfig $INTERFACE | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}')
-  echo "<span foreground=\"#00aa00\"></span>  $IP"
+  echo "<span foreground=\"#b8bb26\"></span>  $IP"
 
 fi
