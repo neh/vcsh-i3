@@ -201,6 +201,7 @@ mode "resize" {
 bindsym Mod4+l mode "resize"
 
 mode "apps" {
+        bindsym c [class="Emacs"] focus, mode "default"
         bindsym s [class="Slack"] focus, mode "default"
         bindsym e [class="Thunderbird"] focus, mode "default"
         bindsym m [title="^.*Google Play Music$"] focus, mode "default"
